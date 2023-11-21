@@ -1,0 +1,258 @@
+body {
+  margin: 0px;
+  margin-bottom: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+/* video background */
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+h1,
+h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  border: 0.5px solid rgba(130, 130, 130, 0.508);
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.517);
+  box-shadow: -1px 1px 100px 10px black;
+  margin-top: 0px;
+  width: auto;
+}
+
+footer {
+  border: 0.5px solid rgba(130, 130, 130, 0.508);
+  background-color: rgba(255, 255, 255, 0.509);
+  box-shadow: -3px -10px 100px 10px black;
+  color: rgb(97, 96, 96);
+  /* font-size: 1.5em; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  /* position: absolute; */
+  /* bottom: 0vh; */
+  /* margin-bottom: 100vh; */
+  margin-top: auto;
+  width: auto;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+h1 {
+  font-size: 6rem;
+  margin-top: 0vh;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 0vh;
+}
+
+.userImg {
+  max-height: 50px;
+  max-width: 50px;
+  border-radius: 30%;
+}
+
+/* @media (max-width: 750px) {
+  #background-video {
+    display: none;
+  }
+  body {
+    background-image: url('./images/doctorthumbnail.png') no-repeat;
+    background-size: cover;
+  }
+} */
+
+form {
+  /* display: flexbox; */
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.517);
+  margin-bottom: 400px;
+  padding: 20px 30px;
+  position: absolute;
+  right: 0vw;
+  top: 10vh;
+  margin: 200px;
+  border-radius: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form input {
+  /* background-color: red; */
+  display: flex;
+  font-size: 1em;
+}
+form label {
+  font-size: 1em;
+}
+
+header a {
+  /* background-color: red; */
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(97, 96, 96);
+  font-size: 1.75em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header a:hover {
+  /* background-color: red; */
+  margin: 10px;
+  color: rgb(53, 53, 53);
+  font-size: 1.75em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.homeLink {
+  float: left;
+  margin-top: 10px;
+}
+
+.appointmentLink {
+  float: right;
+  /* margin-top: 10px; */
+}
+
+/* .subtitle {
+  display: inline-block;
+  position: absolute;
+  bottom: 5vh;
+  text-align: center;
+  margin: 0;
+} */
+
+ol {
+  display: flexbox;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol li {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.517);
+}
+
+ol li a {
+  margin: 4px;
+}
+
+.editAppointmentText {
+  color: black;
+}
+
+.nav {
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.517);
+  border: none;
+}
+
+/* NavBar Styling */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 3.5px;
+  font-weight: bold;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 3;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float: left;
+  background-color: transparent;
+  font-family: 'Lora';
+  color: #f7ebec;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #f7ebec;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.active {
+  background-color: #264653;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}

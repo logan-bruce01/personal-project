@@ -4,6 +4,8 @@ import cors, { CorsOptions } from 'cors'
 
 const server = express()
 
+// server.use('/api/v1/gp')
+
 server.get('/api/v1/greeting', (req, res) => {
   const greetings = ['hola', 'hi', 'hello', 'howdy']
   const index = Math.floor(Math.random() * greetings.length)
